@@ -46,7 +46,6 @@ const text = (() => {
   // event handler fyrir það að klára færslu
   function finish(e) {
     e.target.parentNode.classList.toggle('item--done');
-    console.log('Finish');
   }
 
   // event handler fyrir það að breyta færslu
@@ -62,9 +61,6 @@ const text = (() => {
     parent = span.parentNode;
     parent.removeChild(span);
     parent.insertBefore(newInput, parent.querySelector('.item__button'));
-
-    
-    console.log(text);
   }
 
   // event handler fyrir það að klára að breyta færslu
@@ -82,7 +78,6 @@ const text = (() => {
   
       parent.removeChild(input);
       parent.insertBefore(newSpan, parent.querySelector('.item__button'));
-      console.log(text);
     } 
   }
 
@@ -103,8 +98,6 @@ const text = (() => {
     newItem.appendChild(newButton);
 
     items.appendChild(newItem);
-    console.log('Add');
-
   }
 
   // event handler til að eyða færslu
