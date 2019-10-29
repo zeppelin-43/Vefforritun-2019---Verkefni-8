@@ -39,7 +39,7 @@ const text = (() => {
     if(trimmedDescription !== '')
       add(trimmedDescription);
 
-    
+    newTask.value = '';
     console.log('halló heimur');
   }
 
